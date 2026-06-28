@@ -8,7 +8,7 @@ import (
 func main() {
 	ConnectDatabase()
 
-	router := http.NewServeMux()
+	router := http.NewServerMux()
 
 	router.HandleFunc("/organisations", OrganisationHandler)
 
