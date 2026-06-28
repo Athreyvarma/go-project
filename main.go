@@ -10,12 +10,8 @@ func main() {
 
 	router := http.NewServeMux()
 
-	// Creating a router
-
-	// Register Organisation endpoint
 	router.HandleFunc("/organisations", OrganisationHandler)
 
-	// Register User endpoint
 	router.HandleFunc("/users", UserHandler)
 
 	log.Println("Server Started on Port 8080")
